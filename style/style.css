@@ -1,0 +1,333 @@
+/*Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+/*Colors*/
+/*Body*/
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+button {
+  padding: 15px 20px;
+  border-radius: 30px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  border: none;
+  font-weight: 600;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 20px 20px -18px;
+  background: #ff79da;
+  background: linear-gradient(355deg, rgba(146, 86, 220, 0.836) 0%, #ff79da 100%);
+}
+button:hover {
+  box-shadow: rgba(0, 0, 0, 0.7) 0px 20px 20px -18px;
+  filter: brightness(1.1);
+  transition: 0.3s ease-out;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 900;
+  padding: 0vh 10vw;
+}
+
+h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+h4 {
+  margin: 0;
+  font-size: 14px;
+}
+
+h5 {
+  margin: 0;
+  font-size: 16px;
+}
+
+p {
+  margin: 0;
+  font-size: 16px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8.5vh;
+  width: 100vw;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  z-index: 1;
+}
+header img {
+  height: 4vh;
+}
+
+.position {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eaeaea;
+  height: 7vh;
+}
+.position i {
+  padding-right: 2vh;
+}
+
+.decouverte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6vh 5vw 8vh 5vw;
+  background: #f6f6f6;
+}
+.decouverte h1 {
+  text-align: center;
+  margin-bottom: 2vh;
+}
+.decouverte p {
+  text-align: center;
+  margin-bottom: 5vh;
+  font-size: 1.1rem;
+}
+
+.fonctionnement {
+  display: flex;
+  width: 90vw;
+  flex-direction: column;
+  padding: 7vh 5vw 6vh 5vw;
+}
+.fonctionnement h2 {
+  margin-bottom: 4vh;
+}
+
+.select-card {
+  display: flex;
+  background: #f6f6f6;
+  border-radius: 20px;
+  padding: 27px 20px;
+  margin: 0 0 3vh 0;
+  cursor: pointer;
+}
+.select-card .round {
+  position: relative;
+  left: -4vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  background: #9356dc;
+  border-radius: 100%;
+  color: white;
+  font-size: 13px;
+}
+.select-card i {
+  margin-right: 20px;
+  opacity: 0.6;
+  font-size: 20px;
+}
+.select-card h5 {
+  position: relative;
+  top: 2px;
+}
+.select-card .fa-list-ul {
+  transform: scaleX(0.9);
+}
+.select-card .fa-store {
+  transform: scaleX(0.8);
+}
+.select-card:hover {
+  transition: 0.3s ease-in-out;
+  background-color: #f5edff;
+}
+.select-card:hover i {
+  transition: 0.3s ease-in-out;
+  color: #9356dc;
+  opacity: 1;
+}
+
+.restaurants {
+  width: 100vw;
+  background: #f6f6f6;
+  padding: 7vh 0;
+}
+.restaurants h2 {
+  padding-left: 4vw;
+}
+.restaurants p {
+  font-size: 1.05rem;
+}
+
+.restaurats-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  margin: 3vh 0 0 0;
+}
+
+.restaurant-card {
+  width: 90vw;
+  height: 36vh;
+  border-radius: 15px;
+  background: white;
+  margin-bottom: 2vh;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.restaurant-img {
+  position: relative;
+  overflow: hidden;
+  height: 25vh;
+  border-radius: 15px 15px 0 0;
+}
+.restaurant-img p {
+  position: absolute;
+  z-index: 2;
+  left: 68vw;
+  top: 1.5vh;
+  background: #99e2d0;
+  color: #008765cb;
+  padding: 0.8vh 2.5vw;
+  border-radius: 2px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.restaurant-card-footer {
+  display: flex;
+  position: relative;
+  height: 6vh;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vh 6vw 1vh 4vw;
+}
+.restaurant-card-footer div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.restaurant-card-footer i {
+  align-self: center;
+  font-size: 24px;
+}
+.restaurant-card-footer .fas {
+  display: none;
+  font-size: 25px;
+}
+
+.hover-icon {
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.hover-icon:hover .far, .hover-icon:active .far {
+  position: absolute;
+  z-index: 0;
+  animation: animateBg 0.7s linear normal forwards;
+  background: linear-gradient(180deg, #353535, #353535, transparent, transparent);
+  background-size: 100% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hover-icon:hover .fas, .hover-icon:active .fas {
+  display: inline;
+  z-index: 1;
+  animation: animateBg 0.7s linear normal forwards;
+  background: linear-gradient(180deg, transparent, transparent, transparent, transparent, #9256dc, #ff79da);
+  background-size: 100% 600%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.restaurant-a img {
+  position: absolute;
+  top: -8vh;
+  left: -2vw;
+  width: 93vw;
+  z-index: 0;
+}
+
+.restaurant-b img {
+  position: absolute;
+  top: -22vh;
+  left: 0vw;
+  width: 90vw;
+  z-index: 0;
+}
+
+.restaurant-c img {
+  position: absolute;
+  top: -8vh;
+  left: -2vw;
+  width: 95vw;
+  z-index: 0;
+}
+
+.restaurant-d img {
+  position: absolute;
+  top: -8vh;
+  left: -2vw;
+  width: 93vw;
+  z-index: 0;
+}
+
+footer {
+  height: 20vh;
+  width: 95vw;
+  padding: 4vh 0vw 4vh 5vw;
+  color: white;
+  background: #353535;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+footer .fa-utensils {
+  font-size: 0.8rem;
+  margin-right: 10px;
+}
+footer .fa-hands-helping {
+  font-size: 0.7rem;
+  margin-right: 7px;
+}
+footer svg path {
+  fill: white;
+}
+
+.footer-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 14vh;
+}
+
+@keyframes animateBg {
+  from {
+    background-position: 0% 0%;
+  }
+  to {
+    background-position: 0% 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
