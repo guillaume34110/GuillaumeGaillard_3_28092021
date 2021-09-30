@@ -22,6 +22,7 @@ body {
   align-items: center;
   flex-direction: column;
   width :100vw;
+  user-select: none;
   font-family: $Roboto;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */

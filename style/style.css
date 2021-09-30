@@ -8,6 +8,7 @@ body {
   align-items: center;
   flex-direction: column;
   width: 100vw;
+  user-select: none;
   font-family: "Roboto", sans-serif;
   -ms-overflow-style: none;
   /* IE and Edge */
@@ -494,8 +495,14 @@ main {
   text-overflow: ellipsis;
 }
 
-#toggle:checked ~ .menu-card {
-  background: blue;
+.custom-label {
+  position: absolute;
+  height: 10.5vh;
+  width: 93vw;
+  background: transparent;
+  z-index: 10;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
 .menu-card {
@@ -553,18 +560,29 @@ main {
 .menu-card:active, .menu-card:hover {
   cursor: pointer;
   box-shadow: rgba(62, 90, 119, 0.4) 2px 10px 26px;
+  /* .v-spin{
+       transition: 0.5s ease-in-out;
+       width: 15vw;
+        display: flex;
+  }*/
+  /*.card-main {
+      width : 79%;
+      transition: 0.5s ease-in-out;
+   }*/
+  /* i{animation :animateValidation 0.5s linear normal forwards;}*/
   left: 0vw;
 }
-.menu-card:active .v-spin, .menu-card:hover .v-spin {
+
+#toggle1:checked ~ .v1 .v-spin, #toggle2:checked ~ .v2 .v-spin, #toggle3:checked ~ .v3 .v-spin {
   transition: 0.5s ease-in-out;
   width: 15vw;
   display: flex;
 }
-.menu-card:active .card-main, .menu-card:hover .card-main {
+#toggle1:checked ~ .v1 .card-main, #toggle2:checked ~ .v2 .card-main, #toggle3:checked ~ .v3 .card-main {
   width: 79%;
   transition: 0.5s ease-in-out;
 }
-.menu-card:active i, .menu-card:hover i {
+#toggle1:checked ~ .v1 i, #toggle2:checked ~ .v2 i, #toggle3:checked ~ .v3 i {
   animation: animateValidation 0.5s linear normal forwards;
 }
 
