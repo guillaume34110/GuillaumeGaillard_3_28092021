@@ -1,15 +1,18 @@
 header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 8.5vh;
-  width: 100vw;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  z-index: 1;
+   
   img {
     height: 4vh;
   }
+  height: 10vh;
+  width: 100vw; 
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  z-index: 1;
 }
+.main-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      }
 .position {
   display: flex;
   align-items: center;

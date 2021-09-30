@@ -7,6 +7,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: 100vw;
   font-family: "Roboto", sans-serif;
   -ms-overflow-style: none;
   /* IE and Edge */
@@ -36,13 +37,14 @@ button:hover {
 
 h1 {
   margin: 0;
+  padding: 0;
   font-size: 24px;
   font-weight: 900;
-  padding: 0vh 10vw;
 }
 
 h2 {
   margin: 0;
+  padding: 0;
   font-size: 24px;
   font-weight: 900;
 }
@@ -55,7 +57,8 @@ h3 {
 
 h4 {
   margin: 0;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 h5 {
@@ -74,17 +77,24 @@ a {
   color: inherit;
 }
 
+.hidden {
+  display: none;
+}
+
 header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 8.5vh;
+  height: 10vh;
   width: 100vw;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   z-index: 1;
 }
 header img {
   height: 4vh;
+}
+
+.main-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .position {
@@ -398,6 +408,214 @@ main {
   100% {
     height: 100%;
     opacity: 1;
+  }
+}
+.menu-pages {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+}
+.menu-pages i {
+  font-size: 1.3rem;
+}
+
+.menu-section {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+}
+.menu-section .menu-img {
+  width: 100vw;
+  overflow: hidden;
+}
+.menu-section img {
+  width: 110vw;
+  z-index: -1;
+}
+
+.menu-restaurant {
+  position: relative;
+  top: -9vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 40px;
+  background: #f6f6f6;
+  width: 100vw;
+  padding: 5vh 0 0 0;
+}
+.menu-restaurant button {
+  padding: 15px 40px;
+  margin: 2vh 0vh;
+}
+
+.menu-title {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.menu-title i {
+  align-self: center;
+  font-size: 24px;
+}
+.menu-title .fas {
+  display: none;
+  font-size: 25px;
+}
+.menu-title h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.menu-part {
+  margin: 3vh 0vw;
+}
+.menu-part h4 {
+  position: relative;
+  margin-bottom: 20px;
+}
+.menu-part h4:after {
+  content: "";
+  width: 40px;
+  height: 3px;
+  background: #99e2d0;
+  position: absolute;
+  bottom: -8px;
+  left: 0px;
+}
+.menu-part h3 {
+  font-weight: 800;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#toggle:checked ~ .menu-card {
+  background: blue;
+}
+
+.menu-card {
+  display: flex;
+  width: 90vw;
+  height: 10.5vh;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  overflow: hidden;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 0vh 0vw 0vh 2vw;
+  border-radius: 15px;
+  margin: 2vh 1vw;
+}
+.menu-card div {
+  width: 100%;
+  transition: 0.5s ease-in-out;
+}
+.menu-card .card-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.menu-card .card-main {
+  margin-right: 2vw;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.menu-card p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 15px;
+}
+.menu-card .v-spin {
+  transition: 0.5s ease-in-out;
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #99e2d0;
+  width: 0vw;
+  height: 10.5vh;
+  left: 0vw;
+}
+.menu-card i {
+  position: absolute;
+  font-size: 20px;
+  left: 5vw;
+}
+.menu-card:active, .menu-card:hover {
+  cursor: pointer;
+  box-shadow: rgba(62, 90, 119, 0.4) 2px 10px 26px;
+  left: 0vw;
+}
+.menu-card:active .v-spin, .menu-card:hover .v-spin {
+  transition: 0.5s ease-in-out;
+  width: 15vw;
+  display: flex;
+}
+.menu-card:active .card-main, .menu-card:hover .card-main {
+  width: 79%;
+  transition: 0.5s ease-in-out;
+}
+.menu-card:active i, .menu-card:hover i {
+  animation: animateValidation 0.5s linear normal forwards;
+}
+
+.v1 {
+  position: relative;
+  animation-iteration-count: 1;
+  animation: fadein 1s linear normal forwards;
+}
+
+.v2 {
+  position: relative;
+  animation-iteration-count: 1;
+  animation: fadein 1.2s linear normal forwards;
+}
+
+.v3 {
+  position: relative;
+  animation-iteration-count: 1;
+  animation: fadein 1.4s linear normal forwards;
+}
+
+.v4 {
+  position: relative;
+  animation-iteration-count: 1;
+  animation: fadein 1.6s linear normal forwards;
+}
+
+@keyframes animateValidation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    top: 2vh;
+  }
+  25% {
+    opacity: 0;
+    top: 2vh;
+  }
+  50% {
+    opacity: 0;
+    top: 2vh;
+  }
+  75% {
+    opacity: 1;
+    top: 0vh;
   }
 }
 
