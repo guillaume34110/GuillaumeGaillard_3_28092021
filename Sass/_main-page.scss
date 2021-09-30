@@ -177,35 +177,6 @@ header {
 .hover-icon {
     transition: 0.3s ease-in-out;
     cursor: pointer;
-   &:hover ,&:active{ 
-       .far{
-       position:absolute;
-        z-index : 0;
-        animation :animateBg 0.7s linear normal forwards;
-        background: linear-gradient(
-            180deg,
-            $Black , $Black,transparent,transparent
-          );
-          background-size: 100% 400%;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-        }
-    
-    .fas{
-        display: inline;
-        
-        z-index:1;
-        animation :animateBg 0.7s linear normal forwards;
-        background: linear-gradient(
-            180deg,transparent,transparent,transparent,transparent,
-            rgb(146, 86, 220) ,
-            rgba(255, 121, 218, 1) 
-          );
-          background-size: 100% 600%;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-        }
-    }
     
 }
 .custom-label-hearth{

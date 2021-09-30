@@ -266,24 +266,6 @@ header img {
   transition: 0.3s ease-in-out;
   cursor: pointer;
 }
-.hover-icon:hover .far, .hover-icon:active .far {
-  position: absolute;
-  z-index: 0;
-  animation: animateBg 0.7s linear normal forwards;
-  background: linear-gradient(180deg, #353535, #353535, transparent, transparent);
-  background-size: 100% 400%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.hover-icon:hover .fas, .hover-icon:active .fas {
-  display: inline;
-  z-index: 1;
-  animation: animateBg 0.7s linear normal forwards;
-  background: linear-gradient(180deg, transparent, transparent, transparent, transparent, #9256dc, #ff79da);
-  background-size: 100% 600%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 
 .custom-label-hearth {
   position: absolute;
