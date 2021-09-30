@@ -45,6 +45,7 @@ button {
     rgba(146, 86, 220, 0.836) 0%,
     rgba(255, 121, 218, 1) 100%
   );
+  transition:0.3s ease-out;
   &:hover{
     box-shadow: rgba(0, 0, 0, 0.7) 0px 20px 20px -18px;
     filter:brightness(1.1);

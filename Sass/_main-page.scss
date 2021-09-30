@@ -57,6 +57,7 @@ header {
   padding: 27px 20px;
   margin: 0 0 3vh 0;
   cursor:default;
+  transition: 0.3s ease-in-out;
   .round {
     position: relative;
     left: -4vh;
@@ -74,7 +75,7 @@ header {
     margin-right: 20px;
     opacity:0.6;
     font-size: 20px;
-    
+    transition: 0.3s ease-in-out;
   }
   h5 {
     position: relative;
@@ -86,7 +87,7 @@ header {
   .fa-store {
     transform: scaleX(0.8);
   }
-  &:hover {
+  &:hover,&:active {
     transition: 0.3s ease-in-out;
     background-color: $Purple-light;
     i {
@@ -123,11 +124,16 @@ header {
   margin-bottom: 2vh;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   cursor: pointer;
+  transition: 0.2s ease-in-out;
+  img{
+    transition: 0.4s ease-in-out;
+ }
   &:hover{
       img{
           transition: 0.4s ease-in-out;
           filter:brightness(1.1);
       }
+      transition: 0.2s ease-in-out;
       box-shadow: rgba(149, 157, 165, 0.4) 2px 10px 26px;
   }
 }
