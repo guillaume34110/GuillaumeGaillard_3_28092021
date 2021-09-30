@@ -6,8 +6,11 @@
         width: 100vw;
        
         i{
-           
+           cursor: pointer;
             font-size:1.3rem;
+            &:hover{
+               opacity:0.8;
+            }
         }
  
     }
@@ -52,7 +55,7 @@
       }
     .fas {
         display: none;
-        font-size: 25px; 
+        font-size: 24px; 
       }
       h1{
           font-family: $font-2;
@@ -92,6 +95,79 @@
     border-radius:20px;
     cursor: pointer;
     
+}
+.custom-label-hearth-menu{
+    position: absolute;
+    height: 6vh;
+    width: 95vw;
+    
+    background: transparent;
+    z-index: 10;
+    border-radius:20px;
+    cursor: pointer;
+    
+}
+#toggle-hearth-menu:checked ~ .menu-title{
+    
+    .far{
+        position:absolute;
+         z-index : 0;
+         animation :animateBg 0.7s linear normal forwards;
+         background: linear-gradient(
+             180deg,
+             $Black , $Black,transparent,transparent
+           );
+           background-size: 100% 400%;
+           -webkit-background-clip: text;
+           -webkit-text-fill-color: transparent;
+         }
+     
+     .fas{
+         display: inline;
+         
+         z-index:1;
+         animation :animateBg 0.7s linear normal forwards;
+         background: linear-gradient(
+             180deg,transparent,transparent,transparent,transparent,
+             rgb(146, 86, 220) ,
+             rgba(255, 121, 218, 1) 
+           );
+           background-size: 100% 600%;
+           -webkit-background-clip: text;
+           -webkit-text-fill-color: transparent;
+         }
+     
+}
+#toggle-hearth-menu:not(checked) ~ .menu-title{
+    
+    .far{
+        position:absolute;
+         z-index : 0;
+         animation :animateNoBg 0.7s linear normal forwards;
+         background: linear-gradient(
+             180deg,
+             $Black , $Black,transparent,transparent
+           );
+           background-size: 100% 400%;
+           -webkit-background-clip: text;
+           -webkit-text-fill-color: transparent;
+         }
+     
+     .fas{
+         display: inline;
+         
+         z-index:1;
+         animation :animateNoBg 0.7s linear normal forwards;
+         background: linear-gradient(
+             180deg,transparent,transparent,transparent,transparent,
+             rgb(146, 86, 220) ,
+             rgba(255, 121, 218, 1) 
+           );
+           background-size: 100% 600%;
+           -webkit-background-clip: text;
+           -webkit-text-fill-color: transparent;
+         }
+     
 }
 
 .menu-card{
@@ -165,7 +241,7 @@
        left:0vw;
     }
 }
-#toggle1:checked ~ .v1 , #toggle2:checked ~ .v2,#toggle3:checked ~ .v3{
+#toggle1:checked ~ .v1 , #toggle2:checked ~ .v2,#toggle3:checked ~ .v3 ,#toggle4:checked ~ .v4,#toggle5:checked ~ .v5,#toggle6:checked ~ .v6,#toggle7:checked ~ .v7,#toggle8:checked ~ .v8,#toggle9:checked ~ .v9,#toggle10:checked ~ .v10{
     .v-spin{
         transition: 0.5s ease-in-out;
         width: 15vw;
