@@ -53,7 +53,7 @@ header {
   border-radius: 20px;
   padding: 27px 20px;
   margin: 0 0 3vh 0;
-  cursor: pointer;
+  cursor:default;
   .round {
     position: relative;
     left: -4vh;
@@ -119,6 +119,14 @@ header {
   background: white;
   margin-bottom: 2vh;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  cursor: pointer;
+  &:hover{
+      img{
+          transition: 0.4s ease-in-out;
+          filter:brightness(1.1);
+      }
+      box-shadow: rgba(149, 157, 165, 0.4) 2px 10px 26px;
+  }
 }
 .restaurant-img {
   position: relative;
@@ -267,4 +275,61 @@ footer {
 @keyframes animateBg {
     from { background-position: 0% 0%; }
     to { background-position: 0% 100%; }
+  }
+
+/*LOADER*/
+
+main{
+    opacity : 0;
+    height:100vh;
+    overflow: hidden;
+    animation :animateMain 3s linear normal forwards;
+}
+#loader{
+    position : absolute;
+    color:$Purple;
+    width:50px;
+    height:50px;
+    font-size: 50px;
+    left :45%;
+    top:45%;
+    transform-origin: 20px;
+    animation :animateSpinner 2s linear normal forwards;
+}
+@keyframes animateSpinner {
+    0% { 
+        transform: rotate(0deg); 
+        color:$Purple;
+    }
+    25% {  
+        transform: rotate(360deg); 
+        color:$Pink;
+    }
+    50% {
+        transform: rotate(720deg);
+        color:$Blue-Green 
+    }
+    75% {
+        transform: rotate(1080deg); 
+        color:$Purple;
+        opacity: 1;
+        }
+    100%{
+        transform: rotate(1420deg); 
+        color:$Pink;
+        opacity: 0;
+    }
+  }
+@keyframes animateMain {
+    0% {
+        opacity: 0;
+    }
+    75% {   
+        opacity: 0; 
+        height : 100vh;
+    }
+    100%{
+        height :100%; 
+        opacity: 1;
+    }
   }
