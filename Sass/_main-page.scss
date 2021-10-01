@@ -1,10 +1,11 @@
 header {
-   
+ 
   img {
     height: 4vh;
   }
   height: 10vh;
   width: 100vw; 
+  background:white;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   z-index: 1;
 }
@@ -139,15 +140,16 @@ header {
 }
 .restaurant-img {
   position: relative;
+  display: flex;
   overflow: hidden;
   height: 25vh;
   border-radius: 15px 15px 0 0;
-
+flex-direction: row-reverse;
   p {
     position: absolute;
     z-index: 2;
-    left: 68vw;
-    top: 1.5vh;
+    top: 1.5rem;
+    right: 1.5rem;
     background: $Blue-Green;
     color: #008765cb;
     padding: 0.8vh 2.5vw;
