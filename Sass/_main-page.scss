@@ -1,5 +1,5 @@
 header {
- 
+
   img {
     height: 4vh;
   }
@@ -144,7 +144,7 @@ header {
   overflow: hidden;
   height: 25vh;
   border-radius: 15px 15px 0 0;
-flex-direction: row-reverse;
+  flex-direction: row-reverse;
   p {
     position: absolute;
     z-index: 2;
@@ -198,7 +198,10 @@ flex-direction: row-reverse;
   cursor: pointer;
  
 }
-#toggle-hearth1:checked ~ .r1,#toggle-hearth2:checked ~ .r2,#toggle-hearth3:checked ~ .r3,#toggle-hearth4:checked ~ .r4{
+#toggle-hearth1:checked ~ .r1,
+#toggle-hearth2:checked ~ .r2,
+#toggle-hearth3:checked ~ .r3,
+#toggle-hearth4:checked ~ .r4{
     
   .far{
       position:absolute;
@@ -211,6 +214,8 @@ flex-direction: row-reverse;
          background-size: 100% 400%;
          -webkit-background-clip: text;
          -webkit-text-fill-color: transparent;
+         -moz-background-clip: text;
+         -moz-text-fill-color: transparent;
        }
    
    .fas{
@@ -226,10 +231,15 @@ flex-direction: row-reverse;
          background-size: 100% 600%;
          -webkit-background-clip: text;
          -webkit-text-fill-color: transparent;
+         -moz-background-clip: text;
+         -moz-text-fill-color: transparent;
        }
    
 }
-#toggle-hearth1:not(checked) ~ .r1,#toggle-hearth2:not(checked) ~ .r2,#toggle-hearth3:not(checked) ~ .r3,#toggle-hearth4:not(checked) ~ .r4{
+#toggle-hearth1:not(checked) ~ .r1,
+#toggle-hearth2:not(checked) ~ .r2,
+#toggle-hearth3:not(checked) ~ .r3,
+#toggle-hearth4:not(checked) ~ .r4{
   
   .far{
       position:absolute;
@@ -242,6 +252,8 @@ flex-direction: row-reverse;
          background-size: 100% 400%;
          -webkit-background-clip: text;
          -webkit-text-fill-color: transparent;
+         -moz-background-clip: text;
+         -moz-text-fill-color: transparent;
        }
    
    .fas{
@@ -257,6 +269,8 @@ flex-direction: row-reverse;
          background-size: 100% 600%;
          -webkit-background-clip: text;
          -webkit-text-fill-color: transparent;
+         -moz-background-clip: text;
+         -moz-text-fill-color: transparent;
        }
    
 }

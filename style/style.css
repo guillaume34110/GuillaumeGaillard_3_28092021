@@ -288,7 +288,10 @@ header img {
   cursor: pointer;
 }
 
-#toggle-hearth1:checked ~ .r1 .far, #toggle-hearth2:checked ~ .r2 .far, #toggle-hearth3:checked ~ .r3 .far, #toggle-hearth4:checked ~ .r4 .far {
+#toggle-hearth1:checked ~ .r1 .far,
+#toggle-hearth2:checked ~ .r2 .far,
+#toggle-hearth3:checked ~ .r3 .far,
+#toggle-hearth4:checked ~ .r4 .far {
   position: absolute;
   z-index: 0;
   animation: animateBg 0.7s linear normal forwards;
@@ -296,8 +299,13 @@ header img {
   background-size: 100% 400%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
-#toggle-hearth1:checked ~ .r1 .fas, #toggle-hearth2:checked ~ .r2 .fas, #toggle-hearth3:checked ~ .r3 .fas, #toggle-hearth4:checked ~ .r4 .fas {
+#toggle-hearth1:checked ~ .r1 .fas,
+#toggle-hearth2:checked ~ .r2 .fas,
+#toggle-hearth3:checked ~ .r3 .fas,
+#toggle-hearth4:checked ~ .r4 .fas {
   display: inline;
   z-index: 1;
   animation: animateBg 0.7s linear normal forwards;
@@ -305,9 +313,14 @@ header img {
   background-size: 100% 600%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 
-#toggle-hearth1:not(checked) ~ .r1 .far, #toggle-hearth2:not(checked) ~ .r2 .far, #toggle-hearth3:not(checked) ~ .r3 .far, #toggle-hearth4:not(checked) ~ .r4 .far {
+#toggle-hearth1:not(checked) ~ .r1 .far,
+#toggle-hearth2:not(checked) ~ .r2 .far,
+#toggle-hearth3:not(checked) ~ .r3 .far,
+#toggle-hearth4:not(checked) ~ .r4 .far {
   position: absolute;
   z-index: 0;
   animation: animateNoBg 0.7s linear normal forwards;
@@ -315,8 +328,13 @@ header img {
   background-size: 100% 400%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
-#toggle-hearth1:not(checked) ~ .r1 .fas, #toggle-hearth2:not(checked) ~ .r2 .fas, #toggle-hearth3:not(checked) ~ .r3 .fas, #toggle-hearth4:not(checked) ~ .r4 .fas {
+#toggle-hearth1:not(checked) ~ .r1 .fas,
+#toggle-hearth2:not(checked) ~ .r2 .fas,
+#toggle-hearth3:not(checked) ~ .r3 .fas,
+#toggle-hearth4:not(checked) ~ .r4 .fas {
   display: inline;
   z-index: 1;
   animation: animateNoBg 0.7s linear normal forwards;
@@ -324,6 +342,8 @@ header img {
   background-size: 100% 600%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 
 .restaurant-a img {
@@ -586,15 +606,24 @@ main {
   background-size: 100% 400%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 #toggle-hearth-menu:checked ~ .menu-title .fas {
   display: inline;
+  opacity: 1;
   z-index: 1;
   animation: animateBg 0.7s linear normal forwards;
   background: linear-gradient(180deg, transparent, transparent, transparent, transparent, #9256dc, #ff79da);
   background-size: 100% 600%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.fas {
+  opacity: 0;
 }
 
 #toggle-hearth-menu:not(checked) ~ .menu-title .far {
@@ -605,6 +634,8 @@ main {
   background-size: 100% 400%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 #toggle-hearth-menu:not(checked) ~ .menu-title .fas {
   display: inline;
@@ -614,6 +645,8 @@ main {
   background-size: 100% 600%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 
 .menu-card {
@@ -671,29 +704,46 @@ main {
 .menu-card:active, .menu-card:hover {
   cursor: pointer;
   box-shadow: rgba(62, 90, 119, 0.4) 2px 10px 26px;
-  /* .v-spin{
-       transition: 0.5s ease-in-out;
-       width: 15vw;
-        display: flex;
-  }*/
-  /*.card-main {
-      width : 79%;
-      transition: 0.5s ease-in-out;
-   }*/
-  /* i{animation :animateValidation 0.5s linear normal forwards;}*/
   left: 0vw;
 }
 
-#toggle1:checked ~ .v1 .v-spin, #toggle2:checked ~ .v2 .v-spin, #toggle3:checked ~ .v3 .v-spin, #toggle4:checked ~ .v4 .v-spin, #toggle5:checked ~ .v5 .v-spin, #toggle6:checked ~ .v6 .v-spin, #toggle7:checked ~ .v7 .v-spin, #toggle8:checked ~ .v8 .v-spin, #toggle9:checked ~ .v9 .v-spin, #toggle10:checked ~ .v10 .v-spin {
+#toggle1:checked ~ .v1 .v-spin,
+#toggle2:checked ~ .v2 .v-spin,
+#toggle3:checked ~ .v3 .v-spin,
+#toggle4:checked ~ .v4 .v-spin,
+#toggle5:checked ~ .v5 .v-spin,
+#toggle6:checked ~ .v6 .v-spin,
+#toggle7:checked ~ .v7 .v-spin,
+#toggle8:checked ~ .v8 .v-spin,
+#toggle9:checked ~ .v9 .v-spin,
+#toggle10:checked ~ .v10 .v-spin {
   transition: 0.5s ease-in-out;
   width: 15vw;
   display: flex;
 }
-#toggle1:checked ~ .v1 .card-main, #toggle2:checked ~ .v2 .card-main, #toggle3:checked ~ .v3 .card-main, #toggle4:checked ~ .v4 .card-main, #toggle5:checked ~ .v5 .card-main, #toggle6:checked ~ .v6 .card-main, #toggle7:checked ~ .v7 .card-main, #toggle8:checked ~ .v8 .card-main, #toggle9:checked ~ .v9 .card-main, #toggle10:checked ~ .v10 .card-main {
+#toggle1:checked ~ .v1 .card-main,
+#toggle2:checked ~ .v2 .card-main,
+#toggle3:checked ~ .v3 .card-main,
+#toggle4:checked ~ .v4 .card-main,
+#toggle5:checked ~ .v5 .card-main,
+#toggle6:checked ~ .v6 .card-main,
+#toggle7:checked ~ .v7 .card-main,
+#toggle8:checked ~ .v8 .card-main,
+#toggle9:checked ~ .v9 .card-main,
+#toggle10:checked ~ .v10 .card-main {
   width: 79%;
   transition: 0.5s ease-in-out;
 }
-#toggle1:checked ~ .v1 i, #toggle2:checked ~ .v2 i, #toggle3:checked ~ .v3 i, #toggle4:checked ~ .v4 i, #toggle5:checked ~ .v5 i, #toggle6:checked ~ .v6 i, #toggle7:checked ~ .v7 i, #toggle8:checked ~ .v8 i, #toggle9:checked ~ .v9 i, #toggle10:checked ~ .v10 i {
+#toggle1:checked ~ .v1 i,
+#toggle2:checked ~ .v2 i,
+#toggle3:checked ~ .v3 i,
+#toggle4:checked ~ .v4 i,
+#toggle5:checked ~ .v5 i,
+#toggle6:checked ~ .v6 i,
+#toggle7:checked ~ .v7 i,
+#toggle8:checked ~ .v8 i,
+#toggle9:checked ~ .v9 i,
+#toggle10:checked ~ .v10 i {
   animation: animateValidation 0.5s linear normal forwards;
 }
 
