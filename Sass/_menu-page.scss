@@ -151,9 +151,7 @@ top : -15vh;
          }
      
 }
-.fas .fa-heart{
-    opacity :0
-}
+
 #toggle-hearth-menu:not(checked) ~ .menu-title{
     
     .far{
@@ -174,7 +172,6 @@ top : -15vh;
      
      .fas{
          display: inline;
-         
          z-index:1;
          animation :animateNoBg 0.7s linear normal forwards;
          background: linear-gradient(
@@ -189,6 +186,12 @@ top : -15vh;
            -moz-text-fill-color: transparent;
          }
      
+}
+
+.menu-title {
+    .fas{
+       opacity: 0;
+    } 
 }
 
 .menu-card{
@@ -298,7 +301,7 @@ top : -15vh;
     animation : fadein 1.6s linear normal forwards;
 }
 @keyframes animateValidation {
-    from {  transform: rotate(0deg); ;
+    from {  transform: rotate(0deg); 
        }
     to {  transform: rotate(360deg);
         }
