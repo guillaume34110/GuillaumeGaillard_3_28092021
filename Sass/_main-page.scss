@@ -61,7 +61,7 @@ header {
   transition: 0.3s ease-in-out;
   .round {
     position: relative;
-    left: -4vh;
+    left: -30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -258,7 +258,7 @@ header {
    
    .fas{
        display: inline;
-       
+       opacity: 1;
        z-index:1;
        animation :animateNoBg 0.7s linear normal forwards;
        background: linear-gradient(
@@ -266,11 +266,11 @@ header {
            rgb(146, 86, 220) ,
            rgba(255, 121, 218, 1) 
          );
-         background-size: 100% 600%;
+         background-size:100%  600%;
          -webkit-background-clip: text;
          -webkit-text-fill-color: transparent;
-         -moz-background-clip: text;
-         -moz-text-fill-color: transparent;
+          -moz-background-clip: text;
+          -moz-text-fill-color: transparent;
        }
    
 }
@@ -360,13 +360,16 @@ main{
     animation :animateMain 3s linear normal forwards;
 }
 #loader{
+
     position : absolute;
     color:$Purple;
     width:50px;
     height:50px;
     font-size: 50px;
-    left :45%;
-    top:45%;
+    left :50%;//milieu axe x
+    top:50%;//milieu axe y 
+    margin-left: -25px;//repostionnement au milieu de l'iconne
+    margin-top: -25px;//repostionnement au milieu de l'iconne
     transform-origin: 20px;
     animation :animateSpinner 2s linear normal forwards;
 }

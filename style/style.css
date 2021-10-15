@@ -152,7 +152,7 @@ header img {
 }
 .select-card .round {
   position: relative;
-  left: -4vh;
+  left: -30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -336,6 +336,7 @@ header img {
 #toggle-hearth3:not(checked) ~ .r3 .fas,
 #toggle-hearth4:not(checked) ~ .r4 .fas {
   display: inline;
+  opacity: 1;
   z-index: 1;
   animation: animateNoBg 0.7s linear normal forwards;
   background: linear-gradient(180deg, transparent, transparent, transparent, transparent, #9256dc, #ff79da);
@@ -438,8 +439,10 @@ main {
   width: 50px;
   height: 50px;
   font-size: 50px;
-  left: 45%;
-  top: 45%;
+  left: 50%;
+  top: 50%;
+  margin-left: -25px;
+  margin-top: -25px;
   transform-origin: 20px;
   animation: animateSpinner 2s linear normal forwards;
 }
@@ -622,7 +625,7 @@ main {
   -moz-text-fill-color: transparent;
 }
 
-.fas {
+.fas .fa-heart {
   opacity: 0;
 }
 
