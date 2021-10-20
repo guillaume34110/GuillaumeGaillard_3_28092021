@@ -209,7 +209,17 @@ header img {
   margin: 3vh 0 0 0;
 }
 
+.new-a {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
 .restaurant-card {
+  position: relative;
   width: 90vw;
   height: 36vh;
   border-radius: 15px;

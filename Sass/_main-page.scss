@@ -1,19 +1,18 @@
 header {
-
   img {
     height: 4vh;
   }
   height: 10vh;
-  width: 100vw; 
-  background:white;
+  width: 100vw;
+  background: white;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   z-index: 1;
 }
-.main-page{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-      }
+.main-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .position {
   display: flex;
   align-items: center;
@@ -57,7 +56,7 @@ header {
   border-radius: 20px;
   padding: 27px 20px;
   margin: 0 0 3vh 0;
-  cursor:default;
+  cursor: default;
   transition: 0.3s ease-in-out;
   .round {
     position: relative;
@@ -74,7 +73,7 @@ header {
   }
   i {
     margin-right: 20px;
-    opacity:0.6;
+    opacity: 0.6;
     font-size: 20px;
     transition: 0.3s ease-in-out;
   }
@@ -88,7 +87,8 @@ header {
   .fa-store {
     transform: scaleX(0.8);
   }
-  &:hover,&:active {
+  &:hover,
+  &:active {
     transition: 0.3s ease-in-out;
     background-color: $Purple-light;
     i {
@@ -111,13 +111,23 @@ header {
   }
 }
 .restaurats-container {
+ 
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
   margin: 3vh 0 0 0;
 }
+.new-a{
+  position: absolute;
+  height:100%;
+  width: 100%;
+  top : 0;
+  left : 0;
+  z-index:10;
+}
 .restaurant-card {
+  position: relative;
   width: 90vw;
   height: 36vh;
   border-radius: 15px;
@@ -126,16 +136,16 @@ header {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   cursor: pointer;
   transition: 0.2s ease-in-out;
-  img{
+  img {
     transition: 0.4s ease-in-out;
- }
-  &:hover{
-      img{
-          transition: 0.4s ease-in-out;
-          filter:brightness(1.1);
-      }
-      transition: 0.2s ease-in-out;
-      box-shadow: rgba(149, 157, 165, 0.4) 2px 10px 26px;
+  }
+  &:hover {
+    img {
+      transition: 0.4s ease-in-out;
+      filter: brightness(1.1);
+    }
+    transition: 0.2s ease-in-out;
+    box-shadow: rgba(149, 157, 165, 0.4) 2px 10px 26px;
   }
 }
 .restaurant-img {
@@ -160,119 +170,124 @@ header {
 }
 .restaurant-card-footer {
   display: flex;
-  position :relative;
+  position: relative;
   height: 6vh;
   justify-content: space-between;
-  align-items:center;
+  align-items: center;
   padding: 2vh 6vw 1vh 4vw;
-  
+
   div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  } 
+  }
   i {
     align-self: center;
-   
-    font-size: 24px; 
+
+    font-size: 24px;
   }
   .fas {
     display: none;
-    font-size: 24px; 
+    font-size: 24px;
   }
- 
 }
 .hover-icon {
-    transition: 0.3s ease-in-out;
-    cursor: pointer;
-    
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
-.custom-label-hearth{
+.custom-label-hearth {
   position: absolute;
   height: 25px;
   width: 25px;
-  
   background: transparent;
   z-index: 10;
-  
   cursor: pointer;
- 
 }
 #toggle-hearth1:checked ~ .r1,
 #toggle-hearth2:checked ~ .r2,
 #toggle-hearth3:checked ~ .r3,
-#toggle-hearth4:checked ~ .r4{
-    
-  .far{
-      position:absolute;
-       z-index : 0;
-       animation :animateBg 0.7s linear normal forwards;
-       background: linear-gradient(
-           180deg,
-           $Black , $Black,transparent,transparent
-         );
-         background-size: 100% 400%;
-         -webkit-background-clip: text;
-         -webkit-text-fill-color: transparent;
-         -moz-background-clip: text;
-         -moz-text-fill-color: transparent;
-       }
-   
-   .fas{
-       display: inline;
-       
-       z-index:1;
-       animation :animateBg 0.7s linear normal forwards;
-       background: linear-gradient(
-           180deg,transparent,transparent,transparent,transparent,
-           rgb(146, 86, 220) ,
-           rgba(255, 121, 218, 1) 
-         );
-         background-size: 100% 600%;
-         -webkit-background-clip: text;
-         -webkit-text-fill-color: transparent;
-         -moz-background-clip: text;
-         -moz-text-fill-color: transparent;
-       }
-   
+#toggle-hearth4:checked ~ .r4 {
+  .far {
+    position: absolute;
+    z-index: 0;
+    animation: animateBg 0.7s linear normal forwards;
+    background: linear-gradient(
+      180deg,
+      $Black,
+      $Black,
+      transparent,
+      transparent
+    );
+    background-size: 100% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  }
+
+  .fas {
+    display: inline;
+
+    z-index: 1;
+    animation: animateBg 0.7s linear normal forwards;
+    background: linear-gradient(
+      180deg,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      rgb(146, 86, 220),
+      rgba(255, 121, 218, 1)
+    );
+    background-size: 100% 600%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  }
 }
 #toggle-hearth1:not(checked) ~ .r1,
 #toggle-hearth2:not(checked) ~ .r2,
 #toggle-hearth3:not(checked) ~ .r3,
-#toggle-hearth4:not(checked) ~ .r4{
-  
-  .far{
-      position:absolute;
-       z-index : 0;
-       animation :animateNoBg 0.7s linear normal forwards;
-       background: linear-gradient(
-           180deg,
-           $Black , $Black,transparent,transparent
-         );
-         background-size: 100% 400%;
-         -webkit-background-clip: text;
-         -webkit-text-fill-color: transparent;
-         -moz-background-clip: text;
-         -moz-text-fill-color: transparent;
-       }
-   
-   .fas{
-       display: inline;
-       opacity: 1;
-       z-index:1;
-       animation :animateNoBg 0.7s linear normal forwards;
-       background: linear-gradient(
-           180deg,transparent,transparent,transparent,transparent,
-           rgb(146, 86, 220) ,
-           rgba(255, 121, 218, 1) 
-         );
-         background-size:100%  600%;
-         -webkit-background-clip: text;
-         -webkit-text-fill-color: transparent;
-          -moz-background-clip: text;
-          -moz-text-fill-color: transparent;
-       }
-   
+#toggle-hearth4:not(checked) ~ .r4 {
+  .far {
+    position: absolute;
+    z-index: 0;
+    animation: animateNoBg 0.7s linear normal forwards;
+    background: linear-gradient(
+      180deg,
+      $Black,
+      $Black,
+      transparent,
+      transparent
+    );
+    background-size: 100% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  }
+
+  .fas {
+    display: inline;
+    opacity: 1;
+    z-index: 1;
+    animation: animateNoBg 0.7s linear normal forwards;
+    background: linear-gradient(
+      180deg,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      rgb(146, 86, 220),
+      rgba(255, 121, 218, 1)
+    );
+    background-size: 100% 600%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  }
 }
 .restaurant-a {
   img {
@@ -341,72 +356,78 @@ footer {
   height: 14vh;
 }
 
-
 @keyframes animateBg {
-    from { background-position: 0% 0%; }
-    to { background-position: 0% 100%; }
+  from {
+    background-position: 0% 0%;
   }
-  @keyframes animateNoBg {
-    from { background-position: 0% 100%; }
-    to { background-position: 0% 0%; }
+  to {
+    background-position: 0% 100%;
   }
+}
+@keyframes animateNoBg {
+  from {
+    background-position: 0% 100%;
+  }
+  to {
+    background-position: 0% 0%;
+  }
+}
 
 /*LOADER*/
 
-main{
-    opacity : 0;
-    height:100vh;
-    overflow: hidden;
-    animation :animateMain 3s linear normal forwards;
+main {
+  opacity: 0;
+  height: 100vh;
+  overflow: hidden;
+  animation: animateMain 3s linear normal forwards;
 }
-#loader{
-
-    position : absolute;
-    color:$Purple;
-    width:50px;
-    height:50px;
-    font-size: 50px;
-    left :50%;//milieu axe x
-    top:50%;//milieu axe y 
-    margin-left: -25px;//repostionnement au milieu de l'iconne
-    margin-top: -25px;//repostionnement au milieu de l'iconne
-    transform-origin: 20px;
-    animation :animateSpinner 2s linear normal forwards;
+#loader {
+  position: absolute;
+  color: $Purple;
+  width: 50px;
+  height: 50px;
+  font-size: 50px;
+  left: 50%; //milieu axe x
+  top: 50%; //milieu axe y
+  margin-left: -25px; //repostionnement au milieu de l'iconne
+  margin-top: -25px; //repostionnement au milieu de l'iconne
+  transform-origin: 20px;
+  animation: animateSpinner 2s linear normal forwards;
 }
 @keyframes animateSpinner {
-    0% { 
-        transform: rotate(0deg); 
-        color:$Purple;
-    }
-    25% {  
-        transform: rotate(360deg); 
-        color:$Pink;
-    }
-    50% {
-        transform: rotate(720deg);
-        color:$Blue-Green 
-    }
-    75% {
-        transform: rotate(1080deg); 
-        color:$Purple;
-        opacity: 1;
-        }
-    100%{
-        transform: rotate(1420deg); 
-        color:$Pink;
-        opacity: 0;
-    }
+  0% {
+    transform: rotate(0deg);
+    color: $Purple;
   }
+  25% {
+    transform: rotate(360deg);
+    color: $Pink;
+  }
+  50% {
+    transform: rotate(720deg);
+    color: $Blue-Green;
+  }
+  75% {
+    transform: rotate(1080deg);
+    color: $Purple;
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(1420deg);
+    color: $Pink;
+    opacity: 0;
+  }
+}
 @keyframes animateMain {
-    0% {
-        opacity: 0;
-    }
-    75% {   
-        opacity: 0; 
-        height : 100vh;
-    }
-    100%{
-        height :100%; 
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
   }
+  75% {
+    opacity: 0;
+    height: 100vh;
+  }
+  100% {
+    height: 100%;
+    opacity: 1;
+  }
+}
